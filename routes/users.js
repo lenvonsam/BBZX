@@ -1,7 +1,7 @@
 var express = require('express');
+var AV = require('leanengine');
 var router = express.Router();
 
-var AV = require('leanengine');
 
 router.get('/login', function(req, res, next) {
   var UserTypeID = req.query.UserTypeID;
