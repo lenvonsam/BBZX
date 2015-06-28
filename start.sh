@@ -1,0 +1,6 @@
+export LC_APP_ID=ty41flyo653ze5xuhctzcmfgog4ssxfzu8rjtk42op8d4iq9
+export LC_APP_KEY=cyiogki47j1vdmfw24cjd1k6ct062hkib7oxxgs8uohnfoa2
+export LC_APP_MASTER_KEY=1nmytzc9dolekwf6g715rpfgk9zzz5ipzrfxo9vx0lwxvv28
+export LC_APP_PORT=3000
+
+supervisor --no-restart-on exit server.js
