@@ -3,8 +3,8 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override')
 var cookieParser = require('cookie-parser')
-var AV = require('leanengine');
 var multer = require('multer'); 
+var AV = require('leanengine');
 
 var users = require('./routes/users');
 var todos = require('./routes/todos');
@@ -33,9 +33,9 @@ app.use(methodOverride('_method'))
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(multer()); // for parsing multipart/form-data
-//cookieParser()
-// app.use(cookieParser());
+app.use(multer()); // for parsing multipart/form-data
+// cookieParser()
+app.use(cookieParser());
 
 // 可以将一类的路由单独保存在一个文件中
 app.use('/todos', todos);
