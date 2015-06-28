@@ -1,0 +1,12 @@
+extends layout
+
+block content
+append js
+	body
+		button#test.btn.btn-primary click
+		form(method='post',action='http://218.93.126.107:5657/LoginRest')
+			input(name='MobileNo')
+			input(name='LoginPwd')
+			input(name='UserTypeID',value='1')
+			input(name='SchoolID',value='0')
+			button(type='submit') up
