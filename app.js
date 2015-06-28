@@ -33,9 +33,9 @@ app.use(methodOverride('_method'))
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(multer()); // for parsing multipart/form-data
+// app.use(multer()); // for parsing multipart/form-data
 //cookieParser()
-app.use(cookieParser());
+// app.use(cookieParser());
 
 // 可以将一类的路由单独保存在一个文件中
 app.use('/todos', todos);
